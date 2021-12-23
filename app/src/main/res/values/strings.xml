@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SpraywallTwister</string>
+
+    <string-array name="difficulty">
+        <item>easy</item>
+        <item>normal</item>
+        <item>hard</item>
+    </string-array>
+
+    <string-array name="body">
+        <item>Color Only</item>
+        <item>Hands</item>
+        <item>Hands and Feet</item>
+    </string-array>
+</resources>

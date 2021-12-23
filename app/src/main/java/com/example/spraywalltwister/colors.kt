@@ -1,21 +1,11 @@
 package com.example.spraywalltwister
 
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.widget.Button
-import android.widget.Spinner
-import android.widget.TextView
-import kotlin.random.Random
-import kotlin.random.Random.Default.nextInt
-
-class BoulderColors(var _colorName: String, var _colorCode: String, var _fontColor: String, val _weight: Double, var _currentWeight: Double) {
-    var colorName = _colorName
-    var colorCode = Color.parseColor(_colorCode)
-    var fontColor = Color.parseColor(_fontColor)
-    var weight = _weight
-    var currentWeight = _currentWeight
 
 
+data class BoulderColors(var colorName: String, var colorCode: Int, val fontColor: Int, val weight: Double, var currentWeight: Double){
+
+    constructor (_colorName: String, _colorCode: String, _fontColor: String, _weight: Double, _currentWeight: Double) : this(_colorName, Color.parseColor(_colorCode), Color.parseColor(_fontColor), _weight, _currentWeight) {}
 
 }
+
